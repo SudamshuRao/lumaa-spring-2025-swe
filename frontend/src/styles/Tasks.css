@@ -1,0 +1,166 @@
+/* Center the tasks container */
+.tasks-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+/* Style the tasks box */
+.tasks-box {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+/* Style input and button container */
+.task-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+
+    input, textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    textarea {
+        height: 60px;
+        resize: none;
+    }
+
+    button {
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+}
+
+/* Style task list */
+.task-list {
+    padding: 0;
+    margin-top: 20px;
+    height: 400px;
+    overflow-y: auto;
+
+    li.task-item {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 50px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none; /* Prevent resizing */
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        span {
+            .task-status {
+                margin-left: 5px;
+                padding: 5px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+            }
+            .completed {
+                color: green;
+                background-color: #00ff0022;
+                font-weight: bold;
+            }
+            .pending {
+                color: orange;
+                background-color: #ff990022;
+                font-weight: bold;
+            }
+        }
+
+        .task-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        button {
+            .edit-button, .save-button {
+                background-color: #007bff;
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-right: 5px;
+            }
+
+            .edit-button:hover, .save-button:hover {
+                background-color: #0056b3;
+            }
+
+            .delete-button {
+                background-color: red;
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .delete-button:hover {
+                background-color: darkred;
+            }
+
+
+        }
+    }
+}
+
+/* Style the logout button */
+.logout-button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 12px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    button:hover {
+        background-color: darkred;
+    }
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    margin: 10px 0px;
+}
