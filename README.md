@@ -211,5 +211,6 @@ curl -X DELETE http://localhost:5000/tasks/1 -H "Authorization: Bearer YOUR_JWT_
 
 ## **5. Contributors**
 - **Developer**: Sudamshu
+- **Salary Expectation**: 2800$ - 4200$
 
 ---
